@@ -841,7 +841,7 @@ mod tests {
     macro_rules! test_dtypes {
     ($test_name:ident, $($dtype:ty),*) => {
         $(
-            paste::paste! {
+            pastey::paste! {
                 #[test]
                 fn [<$test_name _ $dtype:snake>]() {
                     let full_dtype = TensorData::full_dtype([2, 16], 4, <$dtype>::dtype());

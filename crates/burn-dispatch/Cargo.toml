@@ -92,7 +92,7 @@ burn-remote = { workspace = true, optional = true, features = ["client"] }
 burn-capture = { workspace = true, optional = true }
 
 # Op macros with `.as_$inner_kind()`
-paste = { workspace = true }
+pastey = { workspace = true }
 
 [target.'cfg(not(target_has_atomic = "ptr"))'.dependencies]
 # Shared tensor infrastructure needs CAS even when no execution backend is selected.
